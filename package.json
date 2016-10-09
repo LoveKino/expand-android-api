@@ -1,0 +1,44 @@
+{
+  "name": "expand-android-api",
+  "version": "0.0.1",
+  "description": "expand android api",
+  "main": "index.js",
+  "bin": {
+    "build-android-patch": "bin/patch.js",
+    "build-android-patch-recovery": "bin/recovery.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoveKino/expand-android-api.git"
+  },
+  "keywords": [
+    "android",
+    "api",
+    "expand",
+    "patch"
+  ],
+  "author": "ddchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoveKino/expand-android-api/issues"
+  },
+  "homepage": "https://github.com/LoveKino/expand-android-api#readme",
+  "dependencies": {
+    "del": "^2.2.2",
+    "mkdirp": "^0.5.1",
+    "promisify-node": "^0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
+  "link_dependencies": {
+    "bolzano": "~0.0.1",
+    "system-tool": "~0.0.1"
+  }
+}
