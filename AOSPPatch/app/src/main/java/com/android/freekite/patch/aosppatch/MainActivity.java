@@ -3,6 +3,8 @@ package com.android.freekite.patch.aosppatch;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 import com.android.freekite.patch.aosppatch.PatchReadHookSource.Yard;
 
@@ -17,13 +19,20 @@ public class MainActivity extends AppCompatActivity {
 
         this.yard = PatchReadHookSource.doRead(this, "com.freekite.android.patch.aosppatch.MainActivity");
         this.yard.receive("test", new Object[]{"a", "b"});
+
+        this.findViewById(R.id.test_id).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("****************************");
+            }
+        });
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         // Used to find calling chain
-        System.out.println("***************************");
-        Thread.dumpStack();
+        // System.out.println("***************************");
+        // Thread.dumpStack();
         return super.dispatchTouchEvent(ev);
     }
 }
