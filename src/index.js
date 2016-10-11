@@ -23,15 +23,14 @@ let filesMap = {
             'Activity.java'
         ],
         [
-            'frameworks/base/core/java/android/util/PatchReadHookSource.java',
+            'frameworks/base/core/java/com/android/freekite/patch/aosppatch/PatchReadHookSource.java',
             'PatchReadHookSource.java',
             'add'
+        ],
+        [
+            'frameworks/base/core/java/com/android/internal/policy/DecorView.java',
+            'DecorView.java'
         ]
-    ],
-
-    'android-5.1.1_r26': [
-        //[ /*relate to project root source*/ , /*relate to AOSP_PATCH_DEV file path*/ ]
-        ['frameworks/base/core/java/android/app/Activity.java', 'Activity.java']
     ]
 };
 
