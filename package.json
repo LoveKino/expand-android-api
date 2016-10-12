@@ -1,6 +1,6 @@
 {
   "name": "expand-android-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "expand android api",
   "main": "index.js",
   "bin": {
