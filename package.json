@@ -1,11 +1,12 @@
 {
   "name": "expand-android-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "expand android api",
   "main": "index.js",
   "bin": {
     "build-android-patch": "bin/patch.js",
-    "build-android-patch-recovery": "bin/recovery.js"
+    "build-android-patch-recovery": "bin/recovery.js",
+    "build-android-patch-deployYard": "bin/deployYard.sh"
   },
   "directories": {
     "test": "test"
