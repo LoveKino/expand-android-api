@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# test cmd: ./deployYard.sh /data/user/0/com.freekite.android.patch.aosppatch /Users/yuer/workspaceforme/category/career/container/app/freekite/app/business/android-yard/target/yard-dex.jar 
+# test cmd: ./deployYard.sh /data/user/0/com.android.freekite.patch.aosppatch /Users/yuer/workspaceforme/category/career/container/app/freekite/app/business/android-yard/target/yard-dex.jar 
 
 APP_PATH=$1
 YARD_PATH=$2
