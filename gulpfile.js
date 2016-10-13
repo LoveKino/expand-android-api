@@ -9,7 +9,7 @@ let mkdirp = promisify(function(r, callback) {
     _mkdirp(r, callback);
 });
 
-const DEV_PATCH = path.join(__dirname, './AOSPPatch');
+const DEV_PATCH = path.join(__dirname, './AndroidContainer');
 
 const AOSP_PATCH_DEV = path.join(__dirname, './src/aospPatchDev');
 
@@ -25,15 +25,15 @@ let copyFile = (file1, file2) => {
 gulp.task('buildPatchSource', () => {
     return Promise.all([
         [
-            'app/src/main/java/com/android/freekite/patch/aosppatch/PatchReadHookSource.java',
+            'aosppatch/src/main/java/com/android/freekite/patch/aosppatch/PatchReadHookSource.java',
             'android-7.0.0_r6/src/PatchReadHookSource.java'
         ],
         [
-            'app/src2/android-7.0.0_r6/Activity.java',
+            'aosppatch/src2/android-7.0.0_r6/Activity.java',
             'android-7.0.0_r6/src/Activity.java'
         ],
         [
-            'app/src2/android-7.0.0_r6/DecorView.java',
+            'aosppatch/src2/android-7.0.0_r6/DecorView.java',
             'android-7.0.0_r6/src/DecorView.java'
         ]
     ].map(([f1, f2]) => copyFile(
