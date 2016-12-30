@@ -46,12 +46,19 @@ let getFilesReflect = (aospPath, version) => {
 };
 
 module.exports = {
+    /**
+     * @param aospPath string
+     *   android open source project root path
+     * @param version string
+     *   version string associated with filesMap
+     */
     patch: (aospPath, version) => {
         return patch(
             getFilesReflect(aospPath, version),
             path.join(AOSP_PATCH, version, 'backup')
         );
     },
+
     recovery: (aospPath, version) => {
         return recovery(
             getFilesReflect(aospPath, version),

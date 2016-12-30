@@ -10,8 +10,7 @@ import dalvik.system.DexClassLoader;
 
 /**
  * Created by yuer on 10/10/16.
- * @{hide}
- *
+ * @hide
  *
  * important: test this file on original emulator not you'r hooked emulator
  */
@@ -19,7 +18,7 @@ public class PatchReadHookSource {
     private static final String HOOK_DIR = "aosp_hook";
     private static final String HOOK_FILE = "yard-dex.jar";
     private static final String CODE_CACHE_DIR = "aosp_hook_code_cache";
-    private static final String HOOK_CLASS_NAME = "com.freekite.android.yard.Yard";
+    private static final String HOOK_CLASS_NAME = "com.android.freekite.yard.Yard";
 
     public interface Yard {
         void receive(String type, Object[] infoList);

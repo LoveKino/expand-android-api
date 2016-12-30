@@ -106,7 +106,8 @@ import static com.android.internal.policy.PhoneWindow.FEATURE_OPTIONS_PANEL;
 
 
 /*********************hack start***********************/
-import com.android.freekite.patch.test.PatchReadHookSource.Yard;
+import com.android.freekite.patch.aosppatch.PatchReadHookSource;
+import com.android.freekite.patch.aosppatch.PatchReadHookSource.Yard;
 /**********************hack end**********************/
 
 /** @hide */

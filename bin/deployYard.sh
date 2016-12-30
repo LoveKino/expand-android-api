@@ -20,7 +20,6 @@ adb shell rm -r $HOOK_DIR
 adb shell mkdir -p $HOOK_DIR
 
 # push
-
 adb push $YARD_PATH $HOOK_DIR
 
 # change context security

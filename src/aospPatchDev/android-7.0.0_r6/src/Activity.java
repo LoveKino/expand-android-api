@@ -129,7 +129,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /*********************hack start***********************/
-import com.android.freekite.patch.test.PatchReadHookSource.Yard;
+import com.android.freekite.patch.aosppatch.PatchReadHookSource;
+import com.android.freekite.patch.aosppatch.PatchReadHookSource.Yard;
 /**********************hack end**********************/
 
 /**
